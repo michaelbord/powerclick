@@ -43,7 +43,7 @@ if (@(Get-Process -Name powershell | Where-Object -FilterScript { $_.Id -eq $pro
     Write-Host "Start process 2: $($process2.Id)"
     $processes[1] = $process2.Id
 } else {
-    Write-Host "Process 2 already running: $($process1.Id)"
+    Write-Host "Process 2 already running: $($process2.Id)"
 }
 
 Write-ProcessCfg -Processes $processes
